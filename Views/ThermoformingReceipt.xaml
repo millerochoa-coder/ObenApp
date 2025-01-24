@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObenApp.Views.ThermoformingReceipt"
+             Title="ThermoformingReceipt">
+
+    <Grid BackgroundColor="#FFFFFF">
+        <ScrollView VerticalScrollBarVisibility="Never">
+            <StackLayout Margin="30,10,30,0"
+                         BackgroundColor="#FFFFFF">
+                <StackLayout Orientation="Horizontal"
+                             Margin="0,0,0,20">
+                    <Frame CornerRadius="100"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0"
+                           Padding="0,0,0,0"
+                           HasShadow="True">
+                        <Image Source="icon_avatar.jpg"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Label x:Name="lblUsuario"
+                           Text=""
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextColor="#A0A0A0"
+                           FontFamily="GothamRnd_Medium"
+                           Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,0">
+                    <Picker x:Name="pkrLocalizacion"
+                            Title="Localización"
+                            TitleColor="#000000"
+                            TextColor="#000000"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,0,10">
+                    <Frame CornerRadius="10"
+                           Padding="10,0,0,0"
+                           BorderColor="#F0F2F5">
+                        <Entry x:Name="txtBarcode"
+                               Placeholder="Barcode"
+                               PlaceholderColor="#A0A0A0"
+                               ClearButtonVisibility="WhileEditing"
+                               TextColor="#000000"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Spacing="5"
+                             Orientation="Horizontal"
+                             Margin="0,10,0,15"
+                             HorizontalOptions="CenterAndExpand"
+                             HeightRequest="40">
+                    <Button x:Name="btnConsultar"
+                            Text="Consultar"
+                            CornerRadius="10"
+                            TextColor="#FFFFFF"
+                            FontFamily="GothamRnd_Medium"
+                            TextTransform="None"
+                            Padding="0,0,0,0"
+                            BackgroundColor="#FF7700"
+                            Clicked="btnConsultar_Clicked">
+                    </Button>
+                    <Button x:Name="btnGuardar"
+                            Text="Guardar"
+                            CornerRadius="10"
+                            TextColor="#FFFFFF"
+                            FontFamily="GothamRnd_Medium"
+                            TextTransform="None"
+                            Padding="0,0,0,0"
+                            BackgroundColor="#FF7700"
+                            Clicked="btnGuardar_Clicked">
+                    </Button>
+                    <Button x:Name="btnLimpiar"
+                            Text="Limpiar"
+                            CornerRadius="10"
+                            TextColor="#FFFFFF"
+                            FontFamily="GothamRnd_Medium"
+                            TextTransform="None"
+                            Padding="0,0,0,0"
+                            BackgroundColor="#FF7700"
+                            Clicked="btnLimpiar_Clicked">
+                    </Button>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Label x:Name="lblNumCod"
+                           Text="Código de pallet:"
+                           TextColor="#000000"
+                           FontAttributes="Bold"/>
+                    <Label x:Name="lblMNumReg"
+                           Text="0"
+                           TextColor="Red"/>
+                </StackLayout>
+                <StackLayout Margin="0,0,20,10"
+                             Orientation="Horizontal"
+                             HorizontalOptions="Start">
+                    <Label x:Name="lblNumRegistro"
+                           Text="Número de registro: "
+                           TextColor="#000000"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           FontAttributes="Bold"
+                           FontSize="12"/>
+                    <Label x:Name="lblTxtNumRegistro"
+                           Text="0"
+                           TextColor="Red"
+                           HorizontalOptions="Center"
+                           FontSize="16"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <ListView x:Name="lvPallet"
+                          Margin="0,0,0,0"
+                          CachingStrategy="RecycleElement"
+                          Grid.Row="4"
+                          Grid.Column="1"
+                          RefreshControlColor="Transparent">
+                        <ListView.ItemTemplate ItemsSource="{Binding PalletLista}">
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding CodPallet}" FontSize="Large"
+                                               TextColor="#A0A1A3"/>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

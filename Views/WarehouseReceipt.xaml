@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObenApp.Views.WarehouseReceipt"
+             Title="WarehouseReceipt">
+
+    <Grid BackgroundColor="#FFFFFF">
+        <ScrollView>
+            <StackLayout Margin="30,10,30,0"
+                         BackgroundColor="#FFFFFF">
+                <StackLayout Orientation="Horizontal"
+                         Margin="0,0,0,15">
+                    <Frame CornerRadius="100"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0"
+                           Padding="0,0,0,0"
+                           HasShadow="True">
+                        <Image Source="icon_avatar.jpg"
+                               HeightRequest="30"
+                               WidthRequest="30"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"/>
+                    </Frame>
+                    <Label x:Name="lblUsuario"
+                           Text=""
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextColor="#A0A0A0"
+                           FontFamily="GothamRnd_Medium"
+                           Margin="10,0,0,0"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                             Spacing="-25">
+                    <Picker x:Name="pkrLocalizacion"
+                            Title="Localización destino"
+                            TextColor="#000000"
+                            TitleColor="#000000"
+                            FontSize="16"
+                            IsEnabled="True"
+                            Margin="0,0,0,0"
+                            HorizontalOptions="FillAndExpand"
+                            SelectedIndexChanged="pkrLocalizacion_SelectedIndexChanged">
+                    </Picker>
+                    <Image x:Name="imgVisualizar"
+                           Source="icon_visible90.png"
+                           HeightRequest="25"
+                           HorizontalOptions="Center"
+                           Margin="0,0,0,0"
+                           VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"
+                                                  NumberOfTapsRequired="1"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </StackLayout>
+                <StackLayout Margin="10,5,0,0">
+                    <Label x:Name="lblCapCod"
+                           Text="Capturar código de barra:"
+                           TextColor="#000000"
+                           VerticalOptions="Center"
+                           HorizontalOptions="Start"/>
+                </StackLayout>
+                <StackLayout>
+                    <Frame CornerRadius="10"
+                           Padding="10,0,10,0"
+                           BorderColor="#F0F2F5"
+                           HasShadow="True">
+                        <Entry x:Name="txtBarcode"
+                               Placeholder="Barcode"
+                               TextColor="#000000"
+                               Margin="0,0,0,0"
+                               Text="{Binding BarcodeName}"
+                               TextChanged="txtBarcode_TextChanged"
+                               TextTransform="Uppercase"
+                               VerticalOptions="CenterAndExpand"
+                               PlaceholderColor="#A0A0A0"
+                               ClearButtonVisibility="WhileEditing"
+                               HeightRequest="40"/>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,5,0,0"
+                             Orientation="Horizontal"
+                             HorizontalOptions="Center">
+                    <Button x:Name="btnConsultar"
+                            Text="Consultar"
+                            TextColor="#FFFFFF"
+                            TextTransform="None"
+                            CornerRadius="10"
+                            Padding="0,0,0,0"
+                            HeightRequest="40"
+                            BackgroundColor="#FF7700"
+                            Clicked="btnConsultar_Clicked">
+                    </Button>
+                    <Button x:Name="btnGuardar"
+                            Text="Guardar"
+                            TextColor="#FFFFFF"
+                            TextTransform="None"
+                            CornerRadius="10"
+                            Padding="0,0,0,0"
+                            HeightRequest="40"
+                            BackgroundColor="#FF7700"
+                            Clicked="btnGuardar_Clicked">
+                    </Button>
+                </StackLayout>
+                <Frame BackgroundColor="WhiteSmoke"
+                       CornerRadius="8">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                     Margin="10,0,0,0">
+                            <Label x:Name="lblListaRQ"
+                                   Text="Lista RQ:"
+                                   TextColor="#A0A0A0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Picker x:Name="pkrListaRequest"
+                                    Title=""
+                                    FontSize="14"
+                                    TextColor="#000000"
+                                    TitleColor="#000000"
+                                    WidthRequest="160"
+                                    VerticalOptions="Center"
+                                    SelectedIndexChanged="pkrListaRequest_SelectedIndexChanged"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                     Margin="10,0,0,0">
+                            <Label x:Name="lblCodigo3"
+                                   Text="RQ:"
+                                   TextColor="#A0A0A0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Label x:Name="lblInfo3"
+                                   Text=""
+                                   TextColor="#000000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                     Margin="10,5,0,5">
+                            <Label x:Name="lblCodigo"
+                                   Text="Código:"
+                                   TextColor="#A0A0A0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Label x:Name="lblInfo"
+                                   Text=""
+                                   TextColor="#000000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal"
+                                     Margin="10,0,0,0">
+                            <Label x:Name="lblCodigo2"
+                                   Text="Barcode:"
+                                   TextColor="#A0A0A0"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Label x:Name="lblInfo2"
+                                   Text=""
+                                   TextColor="#000000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                        </StackLayout>
+                        <StackLayout Margin="0,5,0,0">
+                            <Label x:Name="lblInformacion"
+                                   Text="Información:"
+                                   Margin="10,0,0,0"
+                                   TextColor="#000000"/>
+                            <Frame CornerRadius="10"
+                                   HasShadow="True"
+                                   BorderColor="#F0F2F5"
+                                   BackgroundColor="LightYellow"
+                                   Padding="10,0,10,-9">
+                                <Editor x:Name="txtInfoBarcode"
+                                        Placeholder="Descripción..."
+                                        PlaceholderColor="#A0A0A0"
+                                        TextColor="#000000"
+                                        IsReadOnly="True"
+                                        FontSize="13"
+                                        BackgroundColor="LightYellow"
+                                        AutoSize="TextChanges"
+                                        Margin="0,0,0,0"
+                                        HeightRequest="215"/>
+                            </Frame>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

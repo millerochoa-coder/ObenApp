@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObenApp.Views.Menu"
+             NavigationPage.HasNavigationBar="False"
+             Title="Menu">
+
+    <Grid>
+        <ScrollView>
+            <StackLayout Margin="20">
+                <StackLayout>
+                    <Frame Padding="20,10,20,10">
+                        <StackLayout Orientation="Horizontal">
+                            <Image Source="icon_menu20.png"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Label x:Name="lblMenu"
+                                   Text="Menú"
+                                   VerticalOptions="Center"
+                                   FontAttributes="Bold"
+                                   TextColor="#000000"
+                                   FontSize="20"
+                                   FontFamily="GothamRnd_Medium.ttf"/>
+                            <Frame CornerRadius="100"
+                                   HorizontalOptions="EndAndExpand"
+                                   VerticalOptions="Center"
+                                   Margin="0,0,0,0"
+                                   Padding="0,0,0,0"
+                                   HasShadow="True">
+                                <Image Source="https://i.postimg.cc/MHhmTPkN/icon-avatar.jpg"
+                                       HeightRequest="40"
+                                       WidthRequest="40"
+                                       HorizontalOptions="CenterAndExpand"
+                                       VerticalOptions="End"/>
+                            </Frame>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+                <StackLayout Margin="0,10,0,0">
+                    <Frame>
+                        <StackLayout Spacing="7">
+                            <Button x:Name="btnProductionReceipt"
+                                    ImageSource="https://i.postimg.cc/nzV1M5kM/icons8-f-brica-40.png"
+                                    Text="Recibo de producción"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnProductionReceipt_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnConsultationBarcode"
+                                    ImageSource="https://i.postimg.cc/XYpXL0j9/icons8-esc-ner-de-c-digo-de-barras-2-filled-40.png"
+                                    Text="Consulta barcode"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnConsultationBarcode_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnConsultationPallet"
+                                    ImageSource="https://i.postimg.cc/gkYrQZDy/icons8-plataforma-40.png"
+                                    Text="Consulta de pallet"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnConsultationPallet_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnWarehouseReceipt"
+                                    ImageSource="icon_reciboAlmacen.png"
+                                    Text="Recibo de almacén"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="5,0,5,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnWarehouseReceipt_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnPhysicalInventory"
+                                    ImageSource="https://i.postimg.cc/J7fwsnMB/icons8-almac-n-43.png"
+                                    Text="Inventario físico"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnPhysicalInventory_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnInventoryConsultation"
+                                    ImageSource="https://i.postimg.cc/HxFN8ZDC/icons8-consulta-43.png"
+                                    Text="Consulta inventario"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnInventoryConsultation_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnReceiptFinishedProduct"
+                                    ImageSource="https://i.postimg.cc/jSVsYcLm/icons8-producto-43.png"
+                                    Text="Recibo PT"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnReceiptFinishedProduct_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnThermoformingReceipt"
+                                    ImageSource="https://i.postimg.cc/ZKPhhvCH/icons8-recibo-40.png"
+                                    Text="Recibo de Termo"
+                                    TextTransform="None"
+                                    TextColor="#000000"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnThermoformingReceipt_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnThermoformedDispatch"
+                                    ImageSource="https://i.postimg.cc/5N4xPmt1/icons8-caja-de-cart-n-45.png"
+                                    Text="Despacho de Termo"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnThermoformedDispatch_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnMaterialDelivery"
+                                    ImageSource="https://i.postimg.cc/JhR57tK8/materias-primas-2.png"
+                                    Text="Entrega de material"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnMaterialDelivery_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnConsultationBarcodeInventory"
+                                    ImageSource="https://i.postimg.cc/XYpXL0j9/icons8-esc-ner-de-c-digo-de-barras-2-filled-40.png"
+                                    Text="Consulta barcode inv"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnConsultationBarcodeInventory_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnConsultationStatusPallet"
+                                    ImageSource="https://i.postimg.cc/gkYrQZDy/icons8-plataforma-40.png"
+                                    Text="Consultar pallet"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnConsultationStatusPallet_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnBilling"
+                                    ImageSource="https://i.postimg.cc/YqJsmvKw/icons8-facturaci-n-30.png"
+                                    Text="Facturación"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnBilling_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnApprovePalletCEMToPT"
+                                    ImageSource="https://i.postimg.cc/YqJsmvKw/icons8-facturaci-n-30.png"
+                                    Text="Aprovar pallet"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnApprovePalletCEMToPT_Clicked"
+                                    IsVisible="False">
+                            </Button>
+                            <Button x:Name="btnPhysicalInventoryPt"
+                                    Text="Inventario Fisico"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnPhysicalInventoryPt_Clicked">
+                            </Button>
+                            <Button x:Name="btnCreatePositonAndBlock"
+                                    Text="Crear posiciones y bloques"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnCreatePositonAndBlock_Clicked">
+                            </Button>
+                            <Button x:Name="btnProfileAdministration"
+                                    Text="Administración de perfiles"
+                                    TextColor="#000000"
+                                    TextTransform="None"
+                                    CornerRadius="10"
+                                    Padding="10,0,10,0"
+                                    HeightRequest="45"
+                                    BackgroundColor="#FF7700"
+                                    Clicked="btnProfileAdministration_Clicked">
+                            </Button>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

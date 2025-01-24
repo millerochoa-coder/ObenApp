@@ -1,0 +1,161 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net8.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ObenApp
+build_property.ProjectDir = C:\Users\millerochoa\source\Workspaces\OBENAPP\ObenApp\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ApprovePalletCEMToPT.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ApprovePalletCEMToPT.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ApprovePalletCEMToPT.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ApprovePalletCEMToPT.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ConsultationBarcode.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ConsultationBarcode.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConsultationBarcode.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConsultationBarcode.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ConsultationBarcodeInventory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ConsultationBarcodeInventory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConsultationBarcodeInventory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConsultationBarcodeInventory.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ConsultationPallet.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ConsultationPallet.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConsultationPallet.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConsultationPallet.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ConsultationStatusPallet.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ConsultationStatusPallet.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ConsultationStatusPallet.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ConsultationStatusPallet.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/CreateCodeInventory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.CreateCodeInventory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CreateCodeInventory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CreateCodeInventory.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/CreatePositionAndBlock.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.CreatePositionAndBlock.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\CreatePositionAndBlock.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\CreatePositionAndBlock.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/InventoryConsultation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.InventoryConsultation.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\InventoryConsultation.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\InventoryConsultation.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Login.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/MaterialDelivery.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.MaterialDelivery.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MaterialDelivery.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MaterialDelivery.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/Menu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.Menu.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\Menu.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\Menu.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/PhysicalInventory.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.PhysicalInventory.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\PhysicalInventory.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\PhysicalInventory.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ProductionReceipt.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ProductionReceipt.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProductionReceipt.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProductionReceipt.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ProfileAdministration.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ProfileAdministration.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProfileAdministration.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProfileAdministration.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ReceiptFinishedProduct.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ReceiptFinishedProduct.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ReceiptFinishedProduct.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ReceiptFinishedProduct.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/SavePalletInformation.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.SavePalletInformation.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\SavePalletInformation.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\SavePalletInformation.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ThermoformedDispatch.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ThermoformedDispatch.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ThermoformedDispatch.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ThermoformedDispatch.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/ThermoformingReceipt.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.ThermoformingReceipt.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ThermoformingReceipt.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ThermoformingReceipt.xaml
+
+[C:/Users/millerochoa/source/Workspaces/OBENAPP/ObenApp/Views/WarehouseReceipt.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = ObenApp.Views.WarehouseReceipt.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WarehouseReceipt.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WarehouseReceipt.xaml

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObenApp.Views.ProfileAdministration"
+             Title="ProfileAdministration"
+             NavigationPage.HasNavigationBar="False">
+
+    <Grid BackgroundColor="#FFFFFF">
+        <StackLayout Margin="30,10,30,0"
+                     BackgroundColor="#FFFFFF">
+            <StackLayout>
+                <Frame BackgroundColor="Moccasin">
+                    <StackLayout>
+                        <Frame Margin="0,0,0,0"
+                               Padding="0,0,0,0">
+                            <SearchBar x:Name="txtUser"
+                                       Placeholder="Buscar..."
+                                       TextColor="#000000"
+                                       Margin="0,0,0,-8"
+                                       FontSize="18"
+                                       VerticalOptions="StartAndExpand"
+                                       HorizontalOptions="Fill"
+                                       TextChanged="txtUser_TextChanged"/>
+                        </Frame>
+                        <CollectionView x:Name="cvUsers"
+                                        ItemsSource="{Binding UsersList}"
+                                        SelectionChanged="cvUsers_SelectionChanged" 
+                                        BackgroundColor="#FFFFFF"
+                                        SelectionMode="Single">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Spacing="5"
+                                                 MaximumHeightRequest="47"
+                                                 Margin="5,5,5,5">
+                                        <Label x:Name="lblUsername"
+                                               Text="{Binding Name}"
+                                               TextColor="#000000"
+                                               VerticalOptions="Center"
+                                               HorizontalOptions="Start"/>
+                                        <BoxView HeightRequest="1"
+                                                 BackgroundColor="Gray"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                        <StackLayout>
+                            <Label x:Name="lblSelectedUser"
+                                   TextColor="#000000"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="Start"/>
+                            <Picker x:Name="pkrOptions"
+                                    Title="Opciones"
+                                    TitleColor="#000000"
+                                    TextColor="#000000"
+                                    IsEnabled="True"
+                                    FontSize="15"
+                                    VerticalTextAlignment="Center"
+                                    Margin="0,0,0,0"
+                                    ItemsSource="{Binding ListOptions}"
+                                    SelectedItem="{Binding SelectedOption}"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

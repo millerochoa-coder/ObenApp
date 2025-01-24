@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ObenApp.Views.InventoryConsultation"
+             Title="InventoryConsultation">
+
+    <Grid BackgroundColor="#FFFFFF">
+        <StackLayout Margin="30,10,30,0"
+                     BackgroundColor="#FFFFFF">
+            <StackLayout Orientation="Horizontal"
+                         Margin="0,0,0,20">
+                <Frame CornerRadius="100"
+                           HorizontalOptions="Start"
+                           VerticalOptions="Center"
+                           Margin="0,0,0,0"
+                           Padding="0,0,0,0"
+                           HasShadow="True">
+                    <Image Source="icon_avatar.jpg"
+                               HeightRequest="40"
+                               WidthRequest="40"
+                               HorizontalOptions="Start"
+                               VerticalOptions="Center"/>
+                </Frame>
+                <Label x:Name="lblUsuario"
+                           Text=""
+                           VerticalOptions="Center"
+                           HorizontalOptions="Center"
+                           TextColor="#A0A0A0"
+                           FontFamily="GothamRnd_Medium"
+                           Margin="10,0,0,0"/>
+            </StackLayout>
+            <StackLayout Margin="10,10,0,5">
+                <Label x:Name="lblCodigoInv"
+                       Text="Código de inventario:"
+                       TextColor="#000000"
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Start"/>
+            </StackLayout>
+            <StackLayout>
+                <Frame HasShadow="True"
+                       BorderColor="#F0F2F5"
+                       CornerRadius="10"
+                       Padding="10,0,10,0"
+                       HeightRequest="40">
+                    <Entry x:Name="txtBarcode"
+                           Placeholder="Barcode"
+                           PlaceholderColor="#A0A0A0"
+                           TextColor="#000000"
+                           Text=""
+                           ClearButtonVisibility="WhileEditing"/>
+                </Frame>
+            </StackLayout>
+            <StackLayout Margin="0,10,0,0">
+                <Button x:Name="btnConsultar"
+                        Text="Consultar"
+                        TextTransform="None"
+                        TextColor="#FFFFFF"
+                        CornerRadius="10"
+                        HeightRequest="40"
+                        VerticalOptions="Center"
+                        BackgroundColor="#FF7700"
+                        Clicked="btnConsultar_Clicked">
+                </Button>
+            </StackLayout>
+            <StackLayout Margin="0,50,0,0">
+                <Label x:Name="lblInformacion"
+                       Text="Información:"
+                       TextColor="#000000"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Margin="10,0,0,0"/>
+            </StackLayout>
+            <StackLayout>
+                <ScrollView Orientation="Horizontal"
+                            Margin="0,0,0,0">
+                    <StackLayout Orientation="Horizontal">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                        <ListView x:Name="listx"
+                                  Margin="0,0,0,0"
+                                  ItemTapped="listx_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30*" />
+                                                <ColumnDefinition Width="50*" />
+                                                <ColumnDefinition Width="30*" />
+                                                <ColumnDefinition Width="30*" />
+                                                <ColumnDefinition Width="40*" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Column="0" Text="{Binding Codigo}" HorizontalTextAlignment="Center"/>
+                                            <Label Grid.Column="1" Text="{Binding Nombre}" HorizontalTextAlignment="Center"/>
+                                            <Label Grid.Column="2" Text="{Binding UM}" HorizontalTextAlignment="Center"/>
+                                            <Label Grid.Column="3" Text="{Binding Cantidad}" HorizontalTextAlignment="Center"/>
+                                            <Label Grid.Column="4" Text="{Binding Barcode}" HorizontalTextAlignment="Center"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+</ContentPage>

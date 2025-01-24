@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ObenApp</name>
+    </assembly>
+    <members>
+        <member name="M:ObenApp.App_Code.CatalogAccess.Spr_GetPermisosMenu(System.String)">
+            <summary>
+            Obtiene el permiso de los menus segun su usuario
+            </summary>
+            <param name="Usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ObenApp.App_Code.CatalogAccess.EjecutarConsultaDataTable(System.String,ObenApp.App_Code.Parametro[])">
+            <summary>
+            Obtiene el permiso de las opciones del menu
+            </summary>
+            <param name="Usuario"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ObenApp.App_Code.clsUser.load(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="codsec"></param>
+        </member>
+        <member name="M:ObenApp.App_Code.Utilities.FormatPhoneNumber(System.String)">
+            <summary>
+            Escribe escript en una pagina
+            </summary>
+            <param name="value">Script que se va a insertar</param>
+            <param name="page">pagina a la cual se va insertar script</param>
+            <returns></returns>
+        </member>
+        <member name="M:ObenApp.App_Code.Utilities.GetMD5(System.String)">
+            <summary>
+            Metodo que sirva para obtener el resultado del error del membership
+            </summary>
+            <param name="status">Estado del membership</param>
+            <returns></returns>
+        </member>
+        <member name="M:ObenApp.App_Code.Utilities.StringToUTF8(System.String)">
+            <summary>
+            Se envia email desde el servidor
+            </summary>
+            <param name="from">Correo del remitente</param>
+            <param name="to">Correo del destinatario</param>
+            <param name="subject">Asunto del correo</param>
+            <param name="body">Contenido del correo</param>
+        </member>
+        <member name="M:ObenApp.App_Code.Utilities.ToTitleCase(System.String)">
+            <summary>
+            Title case a un string
+            </summary>
+            <param name="Value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ObenApp.App_Code.Utilities.CleanHtmlTags(System.String)">
+            <summary>
+            convierte un objeto datatable to XML download
+            </summary>
+            <param name="dt"></param>
+            <param name="RutaGuardadoArchivo"></param>
+            <param name="NombreArchivo"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:ObenApp.App_Code.Utilities.IsNumeric(System.String)" -->
+    </members>
+</doc>
